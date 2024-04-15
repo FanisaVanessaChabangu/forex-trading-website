@@ -5,101 +5,84 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Forex Trading Website</title>
     <style>
-        /* Body styles */
         body {
-            font-family: 'Arial', sans-serif;
-            background-color: #f5f5f5; /* Light gray background color */
-            color: #333; /* Dark text color */
+            font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
+            background-color: #f5f5f5;
         }
-
-        /* Container styles */
         .container {
-            max-width: 800px;
+            max-width: 1200px;
             margin: 20px auto;
             padding: 0 20px;
+            display: flex;
+            justify-content: space-between;
         }
-
-        /* Heading styles */
+        .sidebar {
+            width: 200px;
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+        }
+        .content {
+            flex-grow: 1;
+            padding: 20px;
+            background-color: #fff;
+        }
         h1 {
             text-align: center;
-            color: #0066cc; /* Blue color for headings */
+            color: #0066cc;
             margin-bottom: 20px;
         }
-
-        h2 {
-            color: #009933; /* Green color for subheadings */
+        .welcome {
+            background-image: url('https://cdn.pixabay.com/photo/2015/09/09/18/31/board-933371_960_720.jpg');
+            background-size: cover;
+            background-position: center;
+            height: 400px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #fff;
+            font-size: 24px;
+            text-align: center;
         }
-
-        /* Paragraph styles */
-        p {
-            line-height: 1.6;
-            margin-bottom: 15px;
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            grid-gap: 20px;
         }
-
-        /* Section styles */
-        section {
-            margin-bottom: 30px;
-        }
-
-        /* List styles */
-        ul {
-            list-style-type: none;
-            padding-left: 0;
-        }
-
-        /* Testimonial styles */
-        .testimonial {
-            background-color: #fff;
+        .gallery img {
+            width: 100%;
             border-radius: 5px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            padding: 20px;
-            margin-bottom: 20px;
-        }
-
-        .testimonial p {
-            margin-bottom: 10px;
-        }
-
-        .testimonial p:last-child {
-            margin-bottom: 0;
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <h1>Welcome to Our Forex Trading Website</h1>
-        <section>
-            <h2>What is Forex Trading?</h2>
-            <p>
-                Forex trading, also known as foreign exchange trading or currency trading, is the buying and selling of currencies in the foreign exchange market with the aim of making a profit.
-            </p>
-            <p>
-                The forex market is the largest and most liquid financial market in the world, with trillions of dollars traded every day.
-            </p>
-        </section>
-        <section>
-            <h2>Benefits of Forex Trading</h2>
+        <div class="sidebar">
+            <h2>Navigation</h2>
             <ul>
-                <li>High liquidity</li>
-                <li>24-hour market</li>
-                <li>Low transaction costs</li>
-                <li>Ability to profit from both rising and falling markets</li>
-                <li>Access to leverage</li>
+                <li><a href="#information">Information</a></li>
+                <li><a href="#about">About Us</a></li>
             </ul>
-        </section>
-        <section>
-            <h2>Testimonials</h2>
-            <div class="testimonial">
-                <p>"I started trading forex with this website and have seen significant returns on my investments. Highly recommended!"</p>
-                <p>- John Doe</p>
+        </div>
+        <div class="content">
+            <h1>Welcome to Junior Forex Trading Website</h1>
+            <div class="welcome">
+                Welcome! Explore the world of forex trading with Junior.
             </div>
-            <div class="testimonial">
-                <p>"The lessons provided on this website are incredibly helpful for beginners like me. I've learned so much about forex trading!"</p>
-                <p>- Jane Smith</p>
+            <h2 id="information">Information</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vehicula arcu eu dolor ultrices, at blandit libero facilisis...</p>
+            <h2 id="about">About Us</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vehicula arcu eu dolor ultrices, at blandit libero facilisis...</p>
+            <h2>Image Gallery</h2>
+            <div class="gallery">
+                <img src="https://media.giphy.com/media/l0HlGOTonf2bHgH6c/giphy.gif" alt="Forex Trading">
+                <img src="https://media.giphy.com/media/xFdJwrK0sQOyI/giphy.gif" alt="Forex Trading">
+                <img src="https://media.giphy.com/media/3o7WTDQaL0l5qAP9K0/giphy.gif" alt="Forex Trading">
+                <img src="https://media.giphy.com/media/7pmtTyKZr6T3e/giphy.gif" alt="Forex Trading">
             </div>
-        </section>
+        </div>
     </div>
 </body>
 </html>

@@ -31,8 +31,10 @@
         }
         h1 {
             text-align: center;
-            color: #0066cc;
-            margin-bottom: 20px;
+            color: #fff;
+            margin-top: 0;
+            padding-top: 50px;
+            font-size: 36px;
         }
         .welcome {
             background-image: url('https://th.bing.com/th/id/OIP.7V2_AKzfB86TQHhQJaHVjgAAAA?rs=1&pid=ImgDetMain');
@@ -45,6 +47,12 @@
             color: #fff;
             font-size: 24px;
             text-align: center;
+            position: relative;
+        }
+        .welcome-text {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
         }
         .gallery {
             display: grid;
@@ -68,7 +76,9 @@
         </div>
         <div class="content">
             <div class="welcome">
-                Welcome to Our Forex Trading Website
+                <div class="welcome-text">
+                    <h1>Welcome to Junior Forex Trading Website</h1>
+                </div>
             </div>
         </div>
     </div>
